@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet"  href="../css/style.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/webjob.js">  </script>
+</head>
+
+<body>
+
+
+
+
+<div class="topnav" id="myTopnav">
+  <a href="webjobhome.html" class="active">WebJob</a>
+  <a href="findjob.html">Find A Job</a>
+  <a href="recruiter.html">Recruiter</a>
+  <a href="signin.html">Sign In</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+<div class="container">
+<form action="jobprofile.php" method="POST" onsubmit=" validate_matching();">
+<div class="row">
+      <div class="col-25">  
+     <label for="username">Company Name</label>
+     </div>
+ <div class="col-75">
+<input type="text" name="username" id="username"><br>
+</div>
+</div>
+<div class="row">
+      <div class="col-25">  
+<label for="pwd">Password   </label>
+ </div>
+ <div class="col-75">
+<input type="password" id="pwd" name="pwd" >
+</div>
+</div>
+
+
+<p><span id="txtHint"></span></p>
+  <div class="row">
+  <input type="submit" value="login" \> 
+  </div>
+</form>
+<br>
+
+<form action ="chart.php" method ="POST";>
+  <p> want to see available jobs in chart? </p>
+    <input type = "submit" value="click me">
+    <p> to come back for signup click on recruiter tab</p>
+ </form>
+</body>
+</html>
